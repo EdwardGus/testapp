@@ -1,0 +1,56 @@
+header {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px 0 0 10px;
+}
+
+header .badge {
+    position: absolute;
+    top: -20px;
+    left: -90px;
+    z-index: -1;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+
+.gallery figure {
+    display: inline-block;
+    width: 300px;
+    height: 210px;
+    margin: 15px;
+    position: relative;
+}
+
+.gallery figcaption {
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    background-color: rgba(153, 153, 153, .5);
+    padding: 20px;
+    font-family: Titillium, Arial, sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    color: white;
+    opacity: 0;
+}
+
+.gallery figure:hover figcaption {
+    opacity: 1;
+    transition: opacity .75s ease-out;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
